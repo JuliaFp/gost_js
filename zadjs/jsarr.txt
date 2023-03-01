@@ -1,0 +1,11 @@
+let a=[{name:'Бананы', price:600, date: new Date('2022-01-10'), 'country':'Эквадор'}, 
+{name:'Картофель', price:400, date: new Date('2022-03-14'), 'country':'Беларусь'}, 
+{name:'Морковь', price:620, date: new Date('2022-04-19'), 'country':'Россия'}, 
+{name:'Лук', price:600, date: new Date('2022-03-30'), 'country':'Монголия'}, 
+{name:'Яблоки', price:900, date: new Date('2022-02-21'), 'country':'Китай'}];
+
+a.map((c)=>document.write(
+`<hr><p>Наименование товара: ${c.name}</p> 
+<p>Цена, руб: ${c.price}</p>
+<p>Дата: ${c.date.toISOString().split('T')[0]}</p>
+<p>Страна происхождения: ${c.country}</p><hr>`));
